@@ -470,13 +470,4 @@
 (add-hook 'eloud-mode-hook 'eloud-toggle)
 
 (provide 'eloud)
-
-
-
-
 ;;; eloud.el ends here
-
-;; Copyright (C) 2016  Patrick Smyth
-
-;; Author: Patrick Smyth <patricksmyth01>
-;; Keywords: 
