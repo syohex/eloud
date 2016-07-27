@@ -5,6 +5,7 @@
 ;; Author: Patrick Smyth <patricksmyth01@gmail.com>
 ;; Homepage: https://github.com/smythp/eloud
 ;; Keywords:extensions
+;; Package-Requires: ((cl-lib "0.5"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -58,7 +59,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (defgroup eloud nil
   "A lightweight, interactive screen reader for Emacs."
@@ -221,7 +222,7 @@
 	(correction-list (car (cdr r)))
 	(other-args (cdr r))
 	(word-item-num 0)
-	(word (cadddr r))
+	(word (cl-cadddr r))
 	(list-to-read '()))
     (progn
       ;; (print (car correction-list)))))
